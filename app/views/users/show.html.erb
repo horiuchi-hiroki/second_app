@@ -10,5 +10,15 @@
   <%= @user.email %>
 </p>
 
+<p>
+  <strong>Tel:</strong>
+  <%= @user.tel %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= simple_format(@user.comment) %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
